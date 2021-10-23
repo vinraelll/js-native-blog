@@ -1,0 +1,28 @@
+{
+  "name": "js-native-blog",
+  "version": "1.0.0",
+  "description": "creating web blog with pure js",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "keywords": [
+    "js",
+    "blog"
+  ],
+  "author": "A.S.Perchun",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.59.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.3",
+    "html-webpack-plugin": "^5.4.0"
+  }
+}
