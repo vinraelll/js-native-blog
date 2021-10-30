@@ -5,7 +5,6 @@ export class Component {
   }
 
   init() {}
-
   hide() {
     this.$el.classList.add('hide')
   }
