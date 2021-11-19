@@ -17,6 +17,8 @@ export class NavigationComponent extends Component {
 }
 
 function tabClickHandler(event) {
+  event.preventDefault() // закончил работать добавив отмену стандартного поведения ссылок при клике
+
   Array.from(this.$el.querySelectorAll('.tab')).forEach(tab => tab.classList.remove('active'))
 
   if (event.target.classList.contains('tab')) {

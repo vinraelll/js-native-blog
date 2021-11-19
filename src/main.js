@@ -12,10 +12,8 @@ const create   = new CreateComponent('create')
 const posts    = new PostsComponent('posts')
 const favorite = new FavoriteComponent('favorite')
 
-const tabs = [
+navigation.registerTabs([
   {name: 'create', component: create},
   {name: 'posts', component: posts},
-  {name: 'favorite', component: favorite},
-]
-
-navigation.registerTabs(tabs)
+  {name: 'favorite', component: favorite}
+])
